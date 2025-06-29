@@ -78,7 +78,7 @@ The Model Context Protocol allows applications to provide context for LLMs in a 
 ### Adding MCP to your python project
 
 We recommend using [uv](https://docs.astral.sh/uv/) to manage your Python projects.
-
+for Windows **powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"**
 If you haven't created a uv-managed project yet, create one:
 
    ```bash
@@ -135,12 +135,13 @@ You can install this server in [Claude Desktop](https://claude.ai/download) and 
 ```bash
 mcp install server.py
 ```
+for us. uv **run mcp install main.py**
 
 Alternatively, you can test it with the MCP Inspector:
 ```bash
 mcp dev server.py
 ```
-
+**uv run mcp dev main.py**
 ## What is MCP?
 
 The [Model Context Protocol (MCP)](https://modelcontextprotocol.io) lets you build servers that expose data and functionality to LLM applications in a secure, standardized way. Think of it like a web API, but specifically designed for LLM interactions. MCP servers can:
